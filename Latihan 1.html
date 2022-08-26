@@ -8,24 +8,37 @@ body {
 }
 
 #gambar1{
+    display: block;
     border: 5px solid lightblue;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 220px;
 }
 
-#berubah{
+#h1-1{
     color: lightcyan;   
     -webkit-text-stroke: 1.5px black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+
+#p-1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: lightcyan;   
+    -webkit-text-stroke: 0.8px grey;
+    font-size: 25px;
 }
 
 
 </style>
 </head>
 <body>
-    <img id="gambar1" src="p.jpg" width="170" height="210">
+    <img id="gambar1" src="p.jpg">
     
-    <h1 id ="berubah">Grand Atov</h1>
+    <h1 id ="h1-1">Grand Atov</h1>
 
-    <p>TKJ (Teknik Komputer dan Jaringan)</p>
+    <p id ="p-1">TKJ (Teknik Komputer dan Jaringan)</p>
 
     <ul>
         <li>Instagram : <a href="https://www.instagram.com/highqu14">@highqu14</a></li>
@@ -40,5 +53,21 @@ body {
     <br />
     <input type="radio" name="gender" value="female" /> Female
     <br />
+
+    <p id="mantan">Coba tekan tombol di bawah, mantan saya ada...</p>
+
+    <button type="button" onclick='document.getElementById("mantan").innerHTML = "Satu aja sih wkwkkwk"'>Tekan saya!</button>
+
+    <br>
+    <p>Ini dokumentasi saya selama mengikuti kegiatan zoom "Metaverse"</p>
+
+    <button onclick="document.getElementById('myImage').src='metaverse2.png'">Hari pertama</button>
+    
+    <button onclick="document.getElementById('myImage').src='metaverse3.jpg'">Hari kedua</button>
+
+    <img id="myImage" src="metaverse3.jpg" style="width: 500px;">
+
+
+    
 </body>
 </html>
